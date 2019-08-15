@@ -33,7 +33,7 @@ from sklearn.linear_model import LinearRegression
 import warnings
 
 import datetime
-
+from datetime import timedelta 
 
 # In[2]:
 
@@ -51,9 +51,9 @@ def MAPE(y_true, y_pred):
 def report_metrics(y_true, y_pred):
     print("Explained Variance:\n\t", metrics.explained_variance_score(y_true, y_pred))
     print("MAE:\n\t", metrics.mean_absolute_error(y_true, y_pred))
-    print("RMSE:\n\t", np.sqrt(metrics.mean_squared_error(y_true, y_pred)))
-    print("MAPE:\n\t", MAPE(y_true, y_pred))
-    print("r^2:\n\t", metrics.r2_score(y_true, y_pred))
+    # print("RMSE:\n\t", np.sqrt(metrics.mean_squared_error(y_true, y_pred)))
+    # print("MAPE:\n\t", MAPE(y_true, y_pred))
+    # print("r^2:\n\t", metrics.r2_score(y_true, y_pred))
 
 
 # In[9]:
