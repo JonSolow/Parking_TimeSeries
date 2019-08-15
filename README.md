@@ -93,19 +93,6 @@ df_raw.head(10)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -262,19 +249,6 @@ df_clean.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -457,7 +431,7 @@ sample_plots_by_scn(df=df_clean, num_graphs=6, num_per_row=2)
 
 
 
-![png](output_32_1.png)
+![png](images/output_32_1.png)
 
 
 There seems to be a pattern to the parking occupancy, which makes sense.  People may use certain parking areas more often during lunch hours if there are places to eat nearby.   Most areas will also see higher parking rates during weekdays.
@@ -480,23 +454,6 @@ df_agg_dthh[(df_agg_dthh.Occupancy['count']<20)|(df_agg_dthh.Capacity['sum']<250
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead tr th {
-        text-align: left;
-    }
-
-    .dataframe thead tr:last-of-type th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr>
@@ -562,23 +519,6 @@ df_agg_dthh.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead tr th {
-        text-align: left;
-    }
-
-    .dataframe thead tr:last-of-type th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr>
@@ -645,19 +585,6 @@ temp[temp.date_time_halfhour<18]
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead tr th {
-        text-align: left;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr>
@@ -807,7 +734,7 @@ plt.xlabel('Date', fontsize=14);
 ```
 
 
-![png](output_47_0.png)
+![png](images/output_47_0.png)
 
 
 # Look for Seasonality and Test for Stationarity
@@ -824,7 +751,7 @@ subplots_acf_pacf(df_agg_fillmissing)
 ```
 
 
-![png](output_50_0.png)
+![png](images/output_50_0.png)
 
 
 One necessity for time series is to have stationarity.  This means that the mean and standard deviation in the endogenous variable are stable through time.
@@ -1079,19 +1006,6 @@ df_SAR_results.sort_values('Absolute_Diff', ascending=False)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
